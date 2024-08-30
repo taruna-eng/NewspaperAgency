@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawkermanage.hawkerviewController">
+   <children>
+      <Label layoutX="199.0" layoutY="7.0" text="HAWKER MANAGER" textFill="#bc1d1d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="137.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="105.0" layoutX="495.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="113.0" text="HAWKER NAME">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="173.0" text="MOBILE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="232.0" text="ADDRESS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="302.0" text="AREAS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="304.0" text="ALLOCATED AREAS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="picpathh" layoutX="27.0" layoutY="438.0" text="PICPATH:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="picprev" fitHeight="135.0" fitWidth="137.0" layoutX="445.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../project/public/pics.1/user1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="395.0" layoutY="224.0" mnemonicParsing="false" onAction="#doselpic" text="UPLOAD ADHAAR PIC" textFill="#d72222">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="518.0" mnemonicParsing="false" onAction="#dosave" text="ENROLL" textFill="#c11a1a">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="169.0" layoutY="518.0" mnemonicParsing="false" onAction="#doupdate" text="UPDATE" textFill="#c41f1f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="325.0" layoutY="518.0" mnemonicParsing="false" onAction="#dodelete" text="FIRE" textFill="#a91818">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="445.0" layoutY="518.0" mnemonicParsing="false" onAction="#doclear" text="NEW" textFill="#a11919">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboname" editable="true" layoutX="149.0" layoutY="111.0" prefWidth="150.0" />
+      <TextField fx:id="txtmobile" layoutX="149.0" layoutY="170.0" prefHeight="26.0" prefWidth="157.0" />
+      <TextField fx:id="txtaddr" layoutX="149.0" layoutY="229.0" prefHeight="26.0" prefWidth="238.0" />
+      <ComboBox fx:id="comboareas" editable="true" layoutX="11.0" layoutY="338.0" onAction="#doshowareas" prefWidth="150.0" />
+      <TextField fx:id="txtalloareas" layoutX="236.0" layoutY="338.0" prefHeight="26.0" prefWidth="183.0" />
+      <Button layoutX="318.0" layoutY="105.0" mnemonicParsing="false" onAction="#dosearch" text="SEARCH" textFill="#b12929">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="info" layoutX="114.0" layoutY="590.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
